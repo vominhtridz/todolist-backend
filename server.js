@@ -1,6 +1,5 @@
 import express from 'express'
 import cors from 'cors'
-import bodyParser from 'body-parser'
 import todos from './routers/todo.js'
 import mongoose from 'mongoose'
 const app = express()
