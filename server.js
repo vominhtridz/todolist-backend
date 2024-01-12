@@ -3,7 +3,7 @@ import cors from 'cors'
 import todos from './routers/todo.js'
 import mongoose from 'mongoose'
 const app = express()
-const PORT = 5000
+const PORT = 10000
 //models xử lý việc thêm sữa xóa route hay database 
 // view tập hợp các file html
 // controller việc điều hướng các route
