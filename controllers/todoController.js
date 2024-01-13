@@ -15,9 +15,10 @@ export const  RemoveTodo = async (req,res)=>{
         const id = req.body._id
         const deleteTodo = await TodoModel.findByIdAndDelete({_id: id})
         if(!deleteTodo) return res.status(400).json({error: 'không tìm thấy todo'})
-        res.status(200).json(dataDelete)
+        res.status(200).json(deleteTodo)
     }
     catch(err){
+        console.log(err)
     res.status(500).json({error: err})
     }
 }
